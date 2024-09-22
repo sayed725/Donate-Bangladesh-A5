@@ -11,3 +11,8 @@ document.getElementById('btn-login').addEventListener('click',function(event){
     else alert('Wrong phone number or pin')
 
 })
+
+
+document.getElementById().addEventListener('click',function(){
+    
+})
