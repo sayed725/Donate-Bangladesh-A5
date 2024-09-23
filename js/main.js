@@ -11,10 +11,18 @@ document.getElementById('donate-now').addEventListener('click',function(){
     console.log(myBalance,donation,myDonation)
 
 
-if (isNaN(myDonation) || (myDonation < 0) || myDonation > myBalance){
+if (isNaN(myDonation) || (myDonation <= 0) || myDonation > myBalance || myDonation ===''){
     alert('Invalid Amount')
+    return
 }
 
+const totalDonation = donation + myDonation
+document.getElementById('donation').innerText = totalDonation.toFixed(2);
+
+const myNewBalance = myBalance - myDonation
+document.getElementById('my-balance').innerText = myNewBalance.toFixed(2); 
+
+document.getElementById('my_modal_1').showModal();
 
 
 
