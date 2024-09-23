@@ -2,56 +2,129 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        .lexend {
-            font-family: "Lexend";
-            font-optical-sizing: auto;
-        }
-        .title{
-          color: #111111;
-        }
-        .normal{
-          color: #111111B3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .lexend {
+      font-family: "Lexend";
+      font-optical-sizing: auto;
+    }
+
+    .title {
+      color: #111111;
+    }
+
+    .normal {
+      color: #111111B3;
+    }
+  </style>
 </head>
 
 <body class="lexend">
-    <main>
+  <main>
 
-      <!-- nav bar starts here  -->
-      <div class="bg-[#F9F7F3]">
-       <div class="flex justify-between w-11/12 mx-auto py-8">
+    <!-- nav bar starts here  -->
+    <div class="bg-[#F9F7F3] sticky top-0">
+      <div class="flex justify-between w-11/12 mx-auto py-8">
         <div><button class="title text-xl font-semibold bg-lime-300 px-8 py-3 rounded-lg">Blog</button></div>
         <div class="flex items-center gap-2">
           <img src="./resorses/logo.png" alt="">
-          <p class="title text-xl font-semibold">Donate Bangladesh</p>
+          <h1 class="title text-xl font-semibold">Donate Bangladesh</h1>
         </div>
         <div class="flex items-center gap-2">
           <img src="./resorses/coin.png" alt="">
-         <p class="normal text-xl"><span>5500</span>BDT</p>
+          <p class="normal text-xl"><span>5500</span>BDT</p>
         </div>
 
-       </div>
       </div>
-      <!-- navbar ends here  -->
+    </div>
+    <!-- navbar ends here  -->
 
-      <!-- button section starts here -->
-       <div class="w-full mx-auto border-2 flex justify-center gap-5">
-        <button class="bg-lime-300 px-8 py-4 rounded-lg text-center">Donation</button>
-        <button class="px-8 py-4 border-2 border-slate-200 rounded-lg">History</button>
-       </div>
-       <!-- button section ends here -->
+    <!-- button section starts here -->
+    <div class="w-full mx-auto flex justify-center gap-5 bg-white py-[60px] sticky top-0">
+      <button class="bg-lime-300 px-8 py-4 rounded-lg text-center text-xl font-semibold title">Donation</button>
+      <button class="px-8 py-4 border-2 border-slate-200 rounded-lg normal text-xl">History</button>
+    </div>
+    <!-- button section ends here -->
 
-    </main>
+    <!-- Donation section starts here  -->
+    <div class="w-11/12 mx-auto bg-white mb-[100px]">
+      <!-- donate card section -1  -->
+      <div
+        class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
+        <div class=""><img class="mx-auto h-full w-full" src="./resorses/noakhali.png" alt=""></div>
+        <div class="grid gap-4 lg:content-between">
+          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+            <img src="./resorses/coin.png" alt="">
+            <p class="normal "><span>0</span>BDT</p>
+          </button>
+          <h3 class="title text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class="normal"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+            donation will help provide essential supplies and to those affected by this disaster. Every contribution,
+            big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact
+            on the lives of those in need.</p>
+          <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
+          <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
+            Now</button>
+        </div>
+
+
+      </div>
+      <!-- donate card section-2  -->
+      <div class="mt-10">
+        <div
+        class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
+        <div class=""><img class="mx-auto h-full w-full" src="./resorses/feni.png" alt=""></div>
+        <div class="grid gap-4 lg:content-between">
+          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+            <img src="./resorses/coin.png" alt="">
+            <p class="normal "><span>0</span>BDT</p>
+          </button>
+          <h3 class="title text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
+          <p class="normal"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+          <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
+          <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
+            Now</button>
+        </div>
+
+
+      </div>
+      </div>
+      <!-- donate card section-3  -->
+      <div class="mt-10">
+        <div
+        class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
+        <div class=""><img class="mx-auto h-full w-full" src="./resorses/quota-protest.png" alt=""></div>
+        <div class="grid gap-4 lg:content-between">
+          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+            <img src="./resorses/coin.png" alt="">
+            <p class="normal "><span>0</span>BDT</p>
+          </button>
+          <h3 class="title text-xl font-bold">Aid for Injured in the Quota Movement</h3>
+          <p class="normal"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+          <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
+          <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
+            Now</button>
+        </div>
+
+
+      </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Donation section ends here  -->
+
+  </main>
 
 
 
@@ -59,9 +132,9 @@
 
 
 
-    <script src="./js/utilites.js"></script>
-    <script src="./js/features.js"></script>
-    <script src="./js/index.js"></script>
+  <script src="./js/utilites.js"></script>
+  <script src="./js/features.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
