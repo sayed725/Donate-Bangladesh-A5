@@ -47,20 +47,21 @@
     <!-- navbar ends here  -->
 
     <!-- button section starts here -->
-    <div class="w-full mx-auto flex justify-center gap-5 bg-white py-8 sticky top-24 backdrop-blur-sm bg-opacity-80 z-1">
-      <button class="bg-lime-300 px-8 py-4 rounded-lg text-center text-xl font-semibold title">Donation</button>
-      <button class="px-8 py-4 border-2 border-slate-200 rounded-lg normal text-xl">History</button>
+    <div
+      class="w-full mx-auto flex justify-center gap-5 bg-white py-8 sticky top-24 backdrop-blur-sm bg-opacity-80 z-1">
+      <button id="show-donate-section" class="bg-lime-300 px-8 py-4 rounded-lg text-center text-xl font-semibold title">Donation</button>
+      <button id="show-history-section" class="px-8 py-4 border-2 border-slate-200 rounded-lg normal text-xl">History</button>
     </div>
     <!-- button section ends here -->
 
     <!-- Donation section starts here  -->
-    <div class="w-11/12 mx-auto bg-white mb-[100px]">
+    <div id="donate-section" class="w-11/12 mx-auto bg-white mb-[100px]">
       <!-- donate card section -1  -->
       <div
         class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
         <div class=""><img class="mx-auto h-full w-full" src="./resorses/noakhali.png" alt=""></div>
         <div class="grid gap-4 lg:content-between">
-          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+          <button class="flex items-center gap-2 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
             <img src="./resorses/coin.png" alt="">
             <p class="normal "><span>0</span>BDT</p>
           </button>
@@ -79,50 +80,88 @@
       <!-- donate card section-2  -->
       <div class="mt-10">
         <div
-        class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
-        <div class=""><img class="mx-auto h-full w-full" src="./resorses/feni.png" alt=""></div>
-        <div class="grid gap-4 lg:content-between">
-          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
-            <img src="./resorses/coin.png" alt="">
-            <p class="normal "><span>0</span>BDT</p>
-          </button>
-          <h3 class="title text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
-          <p class="normal"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-          <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
-          <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
-            Now</button>
+          class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
+          <div class=""><img class="mx-auto h-full w-full" src="./resorses/feni.png" alt=""></div>
+          <div class="grid gap-4 lg:content-between">
+            <button class="flex items-center gap-2 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+              <img src="./resorses/coin.png" alt="">
+              <p class="normal "><span>0</span>BDT</p>
+            </button>
+            <h3 class="title text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
+            <p class="normal"> The recent floods in Feni have devastated local communities, leading to severe disruption
+              and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical
+              supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild
+              lives in the aftermath of this disaster. Every contribution counts towards making a real difference.
+              Please consider donating today to assist those in urgent need.</p>
+            <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
+            <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
+              Now</button>
+          </div>
+
+
         </div>
-
-
-      </div>
       </div>
       <!-- donate card section-3  -->
       <div class="mt-10">
         <div
-        class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
-        <div class=""><img class="mx-auto h-full w-full" src="./resorses/quota-protest.png" alt=""></div>
-        <div class="grid gap-4 lg:content-between">
-          <button class="flex items-center gap-1 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
-            <img src="./resorses/coin.png" alt="">
-            <p class="normal "><span>0</span>BDT</p>
-          </button>
-          <h3 class="title text-xl font-bold">Aid for Injured in the Quota Movement</h3>
-          <p class="normal"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-          <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
-          <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
-            Now</button>
+          class="flex flex-col gap-4 lg:grid grid-cols-1 lg:grid-cols-2 justify-between lg:gap-10 border-2 border-slate-200 p-6">
+          <div class=""><img class="mx-auto h-full w-full" src="./resorses/quota-protest.png" alt=""></div>
+          <div class="grid gap-4 lg:content-between">
+            <button class="flex items-center gap-2 px-6 py-1 rounded-lg bg-slate-200 w-2/6 text-center justify-center">
+              <img src="./resorses/coin.png" alt="">
+              <p class="normal "><span>0</span>BDT</p>
+            </button>
+            <h3 class="title text-xl font-bold">Aid for Injured in the Quota Movement</h3>
+            <p class="normal"> The recent Quota movement has resulted in numerous injuries and significant hardship for
+              many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that injured individuals receive the care and
+              support they need during this challenging time. Every donation plays a vital role in alleviating their
+              suffering and aiding in their recovery. Please consider making a donation to support these brave
+              individuals in their time of need.</p>
+            <input class="p-4 input input-bordered w-full" placeholder="Write Donation Amount" type="text">
+            <button class="bg-lime-300 px-8 py-3 rounded-lg text-center text-xl font-semibold title w-full">Donate
+              Now</button>
+          </div>
         </div>
-
-
-      </div>
       </div>
 
     </div>
-
-
-
-
     <!-- Donation section ends here  -->
+
+    <!-- history section starts here  -->
+     <div id="history-section" class=" hidden w-11/12 bg-white mx-auto mt-8 mb-[60px]">
+
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-4">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+      <div class="text-start px-10 py-6 border-2 border-slate-200 rounded-lg mt-5">
+        <h5 class="title font-bold mb-4">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h5>
+        <p class="normal">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
+      </div>
+
+     </div>
+    <!-- history section ends here  -->
 
   </main>
 
