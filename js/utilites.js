@@ -31,7 +31,11 @@ function showSectionById(id) {
 function showButtonById(id) {
 
     document.getElementById('show-donate-section').classList.remove('bg-lime-300')
+    document.getElementById('show-donate-section').classList.remove('font-semibold')
+
     document.getElementById('show-history-section').classList.remove('bg-lime-300')
+    document.getElementById('show-history-section').classList.remove('font-semibold')
 
     document.getElementById(id).classList.add('bg-lime-300')
+    document.getElementById(id).classList.add('font-semibold')
 }
