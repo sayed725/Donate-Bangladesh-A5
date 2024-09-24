@@ -16,17 +16,7 @@ function GetTextFieldValueById(id) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// button switching function 
 
 function showSectionById(id) {
 
